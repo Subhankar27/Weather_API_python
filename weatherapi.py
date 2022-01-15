@@ -21,8 +21,7 @@ def getWeather(canvas):
     final_data = "\n" + "Max Temp: " + str(max_temp) + "\n" + "Min Temp: " + str(min_temp) + "\n" + "Pressure: " + str(pressure) + "\n" + "Humidity: " + str(humidity) + "\n" + "Wind Speed: " + str(wind) + "\n" + "Sunrise Time: " + str(sunrise) + "\n" + "Sunset Time: " + str(sunset) + "\n"
     label1.config(text=final_info)
     label2.config(text=final_data)
-
-    
+  
 canvas = tk.Tk()
 canvas.geometry("600x500")
 canvas.title("Weather App")
