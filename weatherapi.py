@@ -2,6 +2,7 @@ import tkinter as tk
 import requests
 import time
 
+
 def getWeather(canvas):
     city = textfield.get()
     api = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=b60da9ba26dd245470914efcb5d84752"
