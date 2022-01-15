@@ -2,7 +2,6 @@ import tkinter as tk
 import requests
 import time
 
-
 def getWeather(canvas):
     city = textfield.get()
     api = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=b60da9ba26dd245470914efcb5d84752"
@@ -21,6 +20,7 @@ def getWeather(canvas):
     final_data = "\n" + "Max Temp: " + str(max_temp) + "\n" + "Min Temp: " + str(min_temp) + "\n" + "Pressure: " + str(pressure) + "\n" + "Humidity: " + str(humidity) + "\n" + "Wind Speed: " + str(wind) + "\n" + "Sunrise Time: " + str(sunrise) + "\n" + "Sunset Time: " + str(sunset) + "\n"
     label1.config(text=final_info)
     label2.config(text=final_data)
+
   
 canvas = tk.Tk()
 canvas.geometry("600x500")
